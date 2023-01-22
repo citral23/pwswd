@@ -17,7 +17,7 @@ if (volume IN_LIST BACKENDS)
 	target_link_libraries(${PROJECT_NAME} LINK_PRIVATE ${ALSA_LIBRARY})
 	target_include_directories(${PROJECT_NAME} PRIVATE EXTERNAL ${ALSA_INCLUDE_DIR})
 
-	set(MIXER_CONTROL "PCM" CACHE STRING "Default mixer control" FORCE)
+	set(MIXER_CONTROL "Mixer" CACHE STRING "Default mixer control" FORCE)
 endif()
 
 find_library(PTHREAD_LIBRARIES pthread REQUIRED)
